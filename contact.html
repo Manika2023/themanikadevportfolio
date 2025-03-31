@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manika - Developer Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <header>
+          <nav>
+              <div class="left">Manika's Portfolio</div>
+              <div class="menu-icon" onclick="toggleMenu()">☰</div>
+              <div class="right">
+                  <ul id="nav-list">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+     </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+     <div class="contact-container">
+         <div class="contact-left">
+             <h2 class="primary-text">Follow Us</h2>
+             <div class="social-links">
+                 <div><i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a></div>
+                 <div><i class="fa-brands fa-square-instagram"></i> <a href="#">Instagram</a></div>
+                 <div><i class="fa-brands fa-linkedin"></i> <a href="#">LinkedIn</a></div>
+             </div>
+         </div>
+
+         <div class="vertical-divider"></div> <!-- Vertical Line -->
+
+         <div class="contact-right">
+             <h2 class="primary-text">Contact Us</h2>
+             <div class="contact-details">
+                 <p>Email: <a href="mailto:singhmanika409@gmail.com">singhmanika409@gmail.com</a></p>
+                 <p>Phone: +91 9990147462</p>
+                 <p>Address: New Delhi, India</p>
+             </div>
+         </div>
+     </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>About Me</h4>
+          <p>I'm a passionate developer, designer, and content creator.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Me</h4>
+          <p>Email: singhmanika409@gmail.com</p>
+          <p>Phone: +9990147462</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Manika. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+
+  <!-- Typed.js for animations -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- ScrollReveal.js for animations -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Custom Scripts -->
+  <script>
+    function toggleMenu() {
+        document.getElementById("nav-list").classList.toggle("active");
+    }
+
+    // ScrollReveal Animations
+    ScrollReveal().reveal('.contact-left', {
+        origin: 'left',
+        distance: '50px',
+        duration: 2000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.contact-right', {
+        origin: 'right',
+        distance: '50px',
+        duration: 2000,
+        delay: 400,
+        easing: 'ease-in-out'
+    });
+  </script>
+
+</html>
