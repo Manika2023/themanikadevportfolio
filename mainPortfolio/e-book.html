@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manika - Developer Portfolio | e-book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .ebook-section {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      .ebook-content {
+        max-width: 700px;
+        margin: auto;
+      }
+
+      .ebook-section h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .ebook-section p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+      }
+
+      .ebook-section .cta {
+        padding: 12px 24px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .ebook-section .cta:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Manika's Portfolio</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="right">
+          <ul id="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about-section second-bg-color">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="manika.png" alt="About Image" />
+        </div>
+        <div class="about-text">
+          <h2 class="">About <span class="primary-text">Me</span></h2>
+          Hello! I'm Manika, a passionate developer, designer, and content
+          creator.
+
+          <p>
+            I specialize in building robust web applications using Django for
+            the backend and React with Tailwind CSS for the frontend. My focus
+            is on crafting scalable, high-performance, and user-friendly
+            applications that not only function efficiently but also provide a
+            seamless user experience.
+          </p>
+
+          <p>
+            With years of experience in development, I have worked on a variety
+            of projects, ranging from dynamic web applications to custom APIs
+            that handle complex data processing. I leverage Django's powerful
+            backend capabilities along with Celery for asynchronous task
+            management (like sending emails, background jobs, and scheduled
+            tasks). On the frontend, I use React and Tailwind CSS to build
+            modern, responsive, and visually appealing UI components.
+          </p>
+
+          <p>
+            Beyond coding, I have a deep passion for video editing and content
+            creation. I bring stories to life through high-quality video
+            editing, motion graphics, and post-production enhancements. Whether
+            it's editing promotional content, social media reels, or
+            professional videos, I aim to create engaging visuals that leave a
+            lasting impact.
+          </p>
+
+          <p>
+            I’m always open to exciting opportunities, collaborations, and
+            innovative projects. Let’s build something amazing together! 🚀✨
+          </p>
+
+          <a href="contact.html" class="cta">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ E-Book Download Section -->
+    <section class="ebook-section second-bg-color">
+      <div class="ebook-content">
+        <h2>📘 Download My Free E-book</h2>
+        <p>
+          Learn more about my journey, projects, and key insights in this
+          downloadable e-book.
+        </p>
+        <a href="e-book-googleListing.pdf" download class="cta">Download PDF</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>About Me</h4>
+          <p>I'm a passionate developer, designer, and content creator.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Me</h4>
+          <p>Email: singhmanika409@gmail.com</p>
+          <p>Phone: +9990147462</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Manika. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-list").classList.toggle("active");
+      }
+
+      // scroll reveal
+      ScrollReveal({
+        reset: true,
+        distance: "80px",
+        duration: 3000,
+        delay: 200,
+      });
+
+      ScrollReveal().reveal(".about-section", { origin: "bottom" });
+      ScrollReveal().reveal(".ebook-section", { origin: "bottom" });
+    </script>
+  </body>
+</html>
